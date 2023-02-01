@@ -1,0 +1,36 @@
+<!-- card -->
+<!-- dash bord is the parent card -->
+<!-- to communicate child and parent card here -->
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px">
+    <mat-card>
+        <!-- child component -->
+        <mat-card-content><app-widget-card icon="dashboard" desc="DashBoard" bg="red"
+                total="1200"></app-widget-card></mat-card-content>
+    </mat-card>
+
+    <mat-card>
+        <mat-card-content><app-widget-card icon="home" desc="institution" bg="blue"
+                total="1200"></app-widget-card></mat-card-content>
+    </mat-card>
+
+    <mat-card>
+        <mat-card-content><app-widget-card icon="person" desc="students" bg="yellow"
+                total="1200"></app-widget-card></mat-card-content>
+    </mat-card>
+    <mat-card>
+        <mat-card-content><app-widget-card icon="group" desc="employe" bg="rose"
+                total="1200"></app-widget-card></mat-card-content>
+    </mat-card>
+</div>
+<app-widget-chart></app-widget-chart>
+
+<div fxLayout="row" fxLayoutAlign="space-evently" fxLayoutGap="20px">
+    <div fxFlex="60">
+        <app-widget-table></app-widget-table>
+    </div>
+    <div fxFlex="40">
+        <app-widget-pie></app-widget-pie>
+    </div>
+</div>
+
+
